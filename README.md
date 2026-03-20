@@ -12,7 +12,7 @@ Este repositorio contiene ejemplos de código, pequeñas prácticas y proyectos 
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone [https://github.com/TU_USUARIO/NOMBRE_DEL_REPO.git](https://github.com/TU_USUARIO/NOMBRE_DEL_REPO.git)
+   git clone https://github.com/dalaiboada/pygame-pills.git
    ```
 2. **Instalar dependencias:**
    Asegúrate de tener Python instalado y ejecuta:
