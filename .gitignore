@@ -1,0 +1,32 @@
+# --- Python ---
+# Archivos compilados
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+ENV/
+
+# --- Editores de Código ---
+# Configuración de VS Code
+.vscode/
+# Configuración de PyCharm
+.idea/
+
+# --- Sistema Operativo ---
+# Archivos temporales de Windows
+Thumbs.db
+desktop.ini
+# Archivos temporales de macOS
+.DS_Store 
+
+# --- Pygame / Distribución ---
+build/
+dist/
+*.spec
+
+# --- Pruebas ---
+lab/
