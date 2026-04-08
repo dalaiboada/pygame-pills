@@ -3,10 +3,11 @@
 Este repositorio contiene ejemplos de código, pequeñas prácticas y proyectos base desarrollados para ustedes. El objetivo es facilitar el aprendizaje de la lógica de videojuegos utilizando Python y la librería Pygame.
 
 ## 📂 Contenido del Repositorio
-| Carpeta / Proyecto | Nivel | Descripción |
-| :--- | :--- | :--- |
-| `01-setup_ventana` | 🟢 Básico | Configuración de la ventana y ciclo principal. <br>└─ 💡 **Tips:** [Guía de colores y configuración](./01-setup_ventana/Tips/) |
 
+| Carpeta / Proyecto   | Nivel      | Descripción                                                                                                                              |
+| :------------------- | :--------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
+| `00-introduccion_poo`| 🩶 Preliminar | Introducción a la Programación Orientada a Objetos (POO).`                                                                                |
+| `01-setup_ventana` | 💚 Básico | Configuración de la ventana y ciclo principal.`<br>`└─ 💡 **Tips:** [Guía de colores y configuración](./01-setup_ventana/Tips/) |
 
 ## 🚀 Cómo usar este material
 
