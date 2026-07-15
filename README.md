@@ -227,4 +227,11 @@ python --version
 
 ---
 
-**Nota:** Este es un documento vivo. Si algo no queda claro o encuentras un error, ¡avísame!
+## 📌 Recursos Adicionales
+
+1. [Documentación oficial de Python](https://docs.python.org/3/)
+2. [W3 School](https://www.w3schools.com/python/default.asp)
+
+---
+
+**Nota:** Este es un documento vivo. Si algo no queda claro o encuentras un error, ¡Avísame!
