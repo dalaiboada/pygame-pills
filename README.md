@@ -8,24 +8,10 @@ Repositorio de referencia técnica para mis estudiantes. Aquí encontrarás un r
 
 | Carpeta de referencia | Tema | Descripción | Enlace |
 | --- | --- | --- | --- |
-| `00-introduccion_poo` | POO | Introducción a la Programación Orientada a Objetos: clases, atributos, métodos y herencia. | [Ver](./00-introduccion_poo/README.md) |
+| `01-tipos_de_datos/` | Tipos de Datos | Tipos básicos, mutabilidad y cómo Python gestiona los objetos en memoria. | [Ver](./01-tipos_de_datos/README.md) |
 | `20-pygame/` | Pygame | Módulo de videojuegos 2D: ventana, eventos, sprites y más. | [Ver](./20-pygame/README.md) |
 
 ---
-
-## Tipos de Dato
-
-| Tipo                | Ejemplo                                   | ¿Qué es?                                   |
-| :------------------ | :---------------------------------------- | :------------------------------------------- |
-| **`int`**   | `42`, `-7`, `0`                     | Números enteros. Sin decimales.             |
-| **`float`** | `3.14`, `-0.5`, `1e3`               | Números con decimales.                      |
-| **`str`**   | `"hola"`, `'Python'`, `f"{nombre}"` | Cadenas de texto. Se definen con comillas.   |
-| **`bool`**  | `True`, `False`                       | Solo dos valores: verdadero o falso.         |
-| **`list`**  | `[1, 2, 3]`, `["a", "b"]`             | Colección ordenada y**mutable**.      |
-| **`tuple`** | `(1, 2, 3)`, `("x", "y")`             | Colección ordenada e**inmutable**.    |
-| **`dict`**  | `{"nombre": "Ana", "edad": 20}`         | Pares clave-valor.                           |
-| **`set`**   | `{1, 2, 3}`                             | Colección**sin duplicados** ni orden. |
-
 ### Conversión entre tipos
 
 ```python

@@ -8,18 +8,18 @@ Antes de escribir programas complejos, debemos entender qué tipo de informació
 
 ## 📋 Resumen de Tipos
 
-| Tipo         | Ejemplo       | ¿Es mutable? |
-| :----------- | :------------ | :-----------: |
-| `int`      | `10`        |     ❌ No     |
-| `float`    | `3.14`      |     ❌ No     |
-| `complex`  | `1 + 2j`    |     ❌ No     |
-| `str`      | `'Hola'`    |     ❌ No     |
-| `list`     | `[1, 2, 3]` |    ✅ Sí    |
-| `tuple`    | `(1, 2, 3)` |     ❌ No     |
-| `dict`     | `{'a': 1}`  |    ✅ Sí    |
-| `set`      | `{1, 2, 3}` |    ✅ Sí    |
-| `bool`     | `True`      |     ❌ No     |
-| `NoneType` | `None`      |     ❌ No     |
+| Tipo         | Ejemplo                      | ¿Es mutable? | ¿Qué es?                                   |
+| :----------- | :--------------------------- | :-----------: | -------------------------------------------- |
+| `int`      | `42`, `-7`, `0`        |     ❌ No     | Números enteros. Sin decimales.             |
+| `float`    | `3.14`, `-0.5`, `1e3` |     ❌ No     | Números con decimales.                      |
+| `complex`  | `1 + 2j`                   |     ❌ No     | Un número **complejo**               |
+| `str`      | `"hola"`, `'Python'`     |     ❌ No     | Cadenas de texto. Se definen con comillas.   |
+| `list`     | `[1, 2, 3]`                |    ✅ Sí    | Colección ordenada                          |
+| `tuple`    | `(1, 2, 3)`                |     ❌ No     | Colección ordenada                          |
+| `dict`     | `{'a': 1}`                 |    ✅ Sí    | Pares clave-valor.                           |
+| `set`      | `{1, 2, 3}`                |    ✅ Sí    | Colección**sin duplicados** ni orden. |
+| `bool`     | `True`, `False`          |     ❌ No     | Solo dos valores: verdadero o falso.         |
+| `NoneType` | `None`                     |     ❌ No     | Valor Nulo.                                  |
 
 ---
 
