@@ -1,28 +1,224 @@
-# 🎮 Recursos de Pygame para Estudiantes
+# 🐍 Python Core Concepts & Cheat Sheet
 
-Este repositorio contiene ejemplos de código, pequeñas prácticas y proyectos base desarrollados para ustedes. El objetivo es facilitar el aprendizaje de la lógica de videojuegos utilizando Python y la librería Pygame.
-
-## 📂 Contenido del Repositorio
-
-| Carpeta / Proyecto   | Nivel      | Descripción                                                                                                                              |
-| :------------------- | :--------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
-| `00-introduccion_poo`| 🩶 Preliminar | Introducción a la Programación Orientada a Objetos (POO).`                                                                                |
-| `01-setup_ventana` | 💚 Básico | Configuración de la ventana y ciclo principal.`<br>`└─ 💡 **Tips:** [Guía de colores y configuración](./01-setup_ventana/Tips/) |
-
-## 🚀 Cómo usar este material
-
-1. **Clonar el repositorio:**
-   ```bash
-   git clone https://github.com/dalaiboada/pygame-pills.git
-   ```
-2. **Instalar dependencias:**
-   Asegúrate de tener Python instalado y ejecuta:
-   ```bash
-   pip install pygame
-   ```
-3. **Ejecutar un ejemplo:**
-   Entra en la carpeta del proyecto y ejecuta el archivo `test.py`.
+Repositorio de referencia técnica para mis estudiantes. Aquí encontrarás un resumen conciso de los conceptos fundamentales de Python, organizados como "píldoras" de rápido acceso.
 
 ---
 
-**Nota:** Estos ejemplos son puntos de partida. ¡Siéntanse libres de modificar el código y experimentar con sus propias mecánicas!
+## 📁 Contenido del Repositorio                          |
+
+| Carpeta de referencia | Tema | Descripción | Enlace |
+| --- | --- | --- | --- |
+| `00-introduccion_poo` | POO | Introducción a la Programación Orientada a Objetos: clases, atributos, métodos y herencia. | [Ver](./00-introduccion_poo/README.md) |
+| `20-pygame/` | Pygame | Módulo de videojuegos 2D: ventana, eventos, sprites y más. | [Ver](./20-pygame/README.md) |
+
+---
+
+## Tipos de Dato
+
+| Tipo                | Ejemplo                                   | ¿Qué es?                                   |
+| :------------------ | :---------------------------------------- | :------------------------------------------- |
+| **`int`**   | `42`, `-7`, `0`                     | Números enteros. Sin decimales.             |
+| **`float`** | `3.14`, `-0.5`, `1e3`               | Números con decimales.                      |
+| **`str`**   | `"hola"`, `'Python'`, `f"{nombre}"` | Cadenas de texto. Se definen con comillas.   |
+| **`bool`**  | `True`, `False`                       | Solo dos valores: verdadero o falso.         |
+| **`list`**  | `[1, 2, 3]`, `["a", "b"]`             | Colección ordenada y**mutable**.      |
+| **`tuple`** | `(1, 2, 3)`, `("x", "y")`             | Colección ordenada e**inmutable**.    |
+| **`dict`**  | `{"nombre": "Ana", "edad": 20}`         | Pares clave-valor.                           |
+| **`set`**   | `{1, 2, 3}`                             | Colección**sin duplicados** ni orden. |
+
+### Conversión entre tipos
+
+```python
+int("10")       # str → int → 10
+str(3.14)       # float → str → "3.14"
+float("2.5")    # str → float → 2.5
+list("abc")     # str → list → ["a", "b", "c"]
+tuple([1,2])    # list → tuple → (1, 2)
+```
+
+---
+
+## Entrada y Salida de Datos
+
+| Operación                   | Código                                   | Resultado                         |
+| :--------------------------- | :---------------------------------------- | :-------------------------------- |
+| **Imprimir**           | `print("Hola")`                         | Muestra texto en consola.         |
+| **Imprimir variables** | `print(f"Tengo {edad} años")`          | Inserta valores con f-strings.    |
+| **Imprimir múltiple** | `print("A", "B", sep="-")`              | Personaliza el separador:`A-B`. |
+| **Pedir datos**        | `nombre = input("¿Cómo te llamas? ")` | Siempre devuelve un**str**. |
+| **Pedir número**      | `edad = int(input("Edad: "))`           | Convierte la entrada a entero.    |
+
+### Formateo de strings (f-strings)
+
+```python
+nombre = "Ana"
+edad = 20
+print(f"Me llamo {nombre} y tengo {edad} años")
+print(f"Pi ≈ {3.14159:.2f}")          # 2 decimales: 3.14
+print(f"{'centro':^20}")               # Centrado en 20 espacios
+print(f"{255:#b}", f"{255:#x}")       # Binario: 0b11111111, Hex: 0xff
+```
+
+---
+
+## Operadores
+
+### Aritméticos
+
+| Operador | Ejemplo    | Resultado                    |
+| :------- | :--------- | :--------------------------- |
+| `+`    | `5 + 3`  | `8`                        |
+| `-`    | `5 - 3`  | `2`                        |
+| `*`    | `5 * 3`  | `15`                       |
+| `/`    | `5 / 3`  | `1.666...` (siempre float) |
+| `//`   | `5 // 3` | `1` (división entera)     |
+| `%`    | `5 % 3`  | `2` (módulo / residuo)    |
+| `**`   | `5 ** 3` | `125` (potencia)           |
+
+### Comparación
+
+| Operador        | Significado                   |
+| :-------------- | :---------------------------- |
+| `==`          | Igual que                     |
+| `!=`          | Diferente de                  |
+| `>` / `<`   | Mayor / menor que             |
+| `>=` / `<=` | Mayor o igual / menor o igual |
+
+### Lógicos
+
+| Operador | Ejemplo            | Resultado |
+| :------- | :----------------- | :-------- |
+| `and`  | `True and False` | `False` |
+| `or`   | `True or False`  | `True`  |
+| `not`  | `not True`       | `False` |
+
+---
+
+## Estructuras de Control
+
+### Condicional
+
+```python
+if condicion:
+    # se ejecuta si es True
+elif otra_condicion:
+    # se ejecuta si la primera falla y esta es True
+else:
+    # se ejecuta si ninguna fue True
+```
+
+### Bucle `for`
+
+```python
+# Recorrer una lista
+for fruta in ["manzana", "plátano", "uva"]:
+    print(fruta)
+
+# Recorrer un rango
+for i in range(5):        # 0, 1, 2, 3, 4
+    print(i)
+
+# Recorrer un diccionario
+for clave, valor in {"a": 1, "b": 2}.items():
+    print(f"{clave}: {valor}")
+```
+
+### Bucle `while`
+
+```python
+contador = 0
+while contador < 5:
+    print(contador)
+    contador += 1
+```
+
+### Control de flujo
+
+| Palabra      | Qué hace                        |
+| :----------- | :------------------------------- |
+| `break`    | Sale del bucle completamente.    |
+| `continue` | Salta a la siguiente iteración. |
+| `pass`     | No hace nada (placeholder).      |
+
+---
+
+## Funciones
+
+```python
+def saludar(nombre, saludo="Hola"):
+    """Saluda a una persona."""
+    return f"{saludo}, {nombre}!"
+
+print(saludar("Ana"))                  # "Hola, Ana!"
+print(saludar("Ana", saludo="Hey"))    # "Hey, Ana!"
+```
+
+### Parámetros especiales
+
+| Sintaxis     | Qué hace                               | Ejemplo de llamada     |
+| :----------- | :-------------------------------------- | :--------------------- |
+| `*args`    | Argumentos posicionales extras (tuple). | `func(1, 2, 3)`      |
+| `**kwargs` | Argumentos con nombre extras (dict).    | `func(nombre="Ana")` |
+
+```python
+def registrar(nombre, *cursos, **datos):
+    print(nombre, cursos, datos)
+
+registrar("Ana", "POO", "Pygame", edad=20, ciudad="Bogotá")
+# Ana ('POO', 'Pygame') {'edad': 20, 'ciudad': 'Bogotá'}
+```
+
+---
+
+## Programación Orientada a Objetos (POO)
+
+> Para el contenido completo, revisa la carpeta [`00-introduccion_poo`](./00-introduccion_poo/).
+
+| Concepto               | Ejemplo                 | Descripción                                   |
+| :--------------------- | :---------------------- | :--------------------------------------------- |
+| **Clase**        | `class Persona:`      | Molde / plantilla para crear objetos.          |
+| **Objeto**       | `p = Persona("Ana")`  | Instancia concreta de una clase.               |
+| **Atributo**     | `p.nombre`            | Variable que pertenece al objeto.              |
+| **Método**      | `p.saludar()`         | Función dentro de una clase.                  |
+| **`__init__`** | `def __init__(self):` | Constructor. Se ejecuta al crear el objeto.    |
+| **`self`**     | `self.nombre`         | Referencia al objeto actual.                   |
+| **Herencia**     | `class Hijo(Padre):`  | La hija hereda atributos y métodos del padre. |
+| **`super()`**  | `super().__init__()`  | Llama al constructor de la clase padre.        |
+
+---
+
+## Módulos y Paquetes
+
+```python
+import math                    # Importa el módulo completo
+print(math.pi)                 # 3.141592653589793
+
+from random import randint     # Importa solo una función
+print(randint(1, 10))          # Número aleatorio entre 1 y 10
+
+import datetime as dt          # Alias corto
+print(dt.date.today())         # Fecha de hoy
+```
+
+### Módulos útiles de la biblioteca estándar
+
+| Módulo         | Para qué sirve                                          |
+| :-------------- | :------------------------------------------------------- |
+| `math`        | Funciones matemáticas (sqrt, ceil, floor, pi...).       |
+| `random`      | Números aleatorios (randint, choice, shuffle...).       |
+| `datetime`    | Fechas y horas.                                          |
+| `os`          | Interacción con el sistema operativo (rutas, archivos). |
+| `json`        | Leer y escribir archivos JSON.                           |
+| `collections` | Estructuras de datos extras (Counter, defaultdict...).   |
+
+---
+
+## ¿Siguiente paso?
+
+Explora los módulos especializados del repositorio:
+
+- **[`20-pygame/`](./20-pygame/)** — Aprende a crear videojuegos 2D con Pygame.
+
+---
+
+**Nota:** Este es un documento vivo. Si algo no queda claro o encuentras un error, ¡avísame!

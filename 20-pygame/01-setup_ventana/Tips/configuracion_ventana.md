@@ -4,28 +4,27 @@ Si ya dominas cómo abrir una ventana básica, es hora de aprender a controlar c
 
 ### 🚩 Las "Flags" (Banderas) de Pantalla
 
-Las banderas son indicadores que le pasan instrucciones extra a `pygame.display.set_mode()`. Se colocan después del tamaño de la ventana.
+Las banderas son indicadores que le pasan instrucciones extra a `display.set_mode()`. Se colocan después del tamaño de la ventana.
 
-| Propiedad                      | Código en Pygame     | ¿Qué hace?                                                              |
-| :----------------------------- | :-------------------- | :------------------------------------------------------------------------ |
-| **Pantalla Completa**    | `pygame.FULLSCREEN` | El juego ocupa todo el monitor.                                           |
-| **Sin Bordes**           | `pygame.NOFRAME`    | Quita la barra superior (cerrar, minimizar).                              |
-| **Redimensionable**      | `pygame.RESIZABLE`  | Permite que el usuario cambie el tamaño con el ratón.                   |
-| **Escalado Inteligente** | `pygame.SCALED`     | Ajusta la resolución a pantallas modernas (4K/Retina) sin verse borroso. |
+| Propiedad                      | Código en Pygame | ¿Qué hace?                                                              |
+| :----------------------------- | :---------------- | :------------------------------------------------------------------------ |
+| **Pantalla Completa**    | `FULLSCREEN`    | El juego ocupa todo el monitor.                                           |
+| **Sin Bordes**           | `NOFRAME`       | Quita la barra superior (cerrar, minimizar).                              |
+| **Redimensionable**      | `RESIZABLE`     | Permite que el usuario cambie el tamaño con el ratón.                   |
+| **Escalado Inteligente** | `SCALED`        | Ajusta la resolución a pantallas modernas (4K/Retina) sin verse borroso. |
 
 #### 🛠️ Ejemplo: Ventana Redimensionable
 
 ```python
 
 # Ventana de 800x600 que el usuario puede estirar
-ventana = pygame.display.set_mode((800, 600), pygame.RESIZABLE)
+ventana = display.set_mode((800, 600), RESIZABLE)
 
 ```
 
 > **Tip para Pro:** Si quieres usar varias banderas a la vez, únalas con el símbolo: ``|`` (llamado "pipe"):
 >
->
-> `ventana = pygame.display.set_mode((800, 600), pygame.FULLSCREEN | pygame.SCALED)`
+> `ventana = display.set_mode((800, 600), FULLSCREEN | SCALED)`
 
 ---
 
@@ -35,10 +34,10 @@ Por defecto, Pygame muestra un logo genérico. Para cambiarlo, necesitas una ima
 
 ```python
 # 1. Cargamos la imagen desde nuestra carpeta
-icono = pygame.image.load("./01-setup_ventana/nombre_imagen.png")
+icono = image.load("./01-setup_ventana/nombre_imagen.png")
 
 # 2. Se la asignamos a la ventana
-pygame.display.set_icon(icono)
+display.set_icon(icono)
 ```
 
 ---
@@ -47,8 +46,8 @@ pygame.display.set_icon(icono)
 
 A veces, en juegos de terror o de disparos, no queremos que el cursor del sistema distraiga al jugador.
 
-* **Ocultar el ratón:** `pygame.mouse.set_visible(False)`
-* **Bloquear el ratón dentro del juego:** `pygame.event.set_grab(True)`
+* **Ocultar el ratón:** `mouse.set_visible(False)`
+* **Bloquear el ratón dentro del juego:** `event.set_grab(True)`
   *(Esto evita que el ratón se salga de la ventana, ideal para juegos de mucha acción).*
 
 ---

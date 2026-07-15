@@ -50,22 +50,19 @@ Pygame guarda todas las acciones del usuario (teclado, ratón, cerrar ventana) e
 ## 2. `setup_ventana.py` (Código Comentado)
 
 ```python
-import pygame
+from pygame import *
 
 # 1. CONFIGURACIÓN E INICIALIZACIÓN
-# Preparamos los motores de Pygame
-pygame.init()
 
 # Definimos constantes para las dimensiones (Buena práctica: en mayúsculas)
 ANCHO = 800
 ALTO = 600
 
-# Creamos la superficie principal de dibujo (la ventana)
 # Usamos dobles paréntesis porque set_mode espera una tupla (x, y)
-ventana = pygame.display.set_mode((ANCHO, ALTO))
+ventana = display.set_mode((ANCHO, ALTO))
 
 # Le damos un título a nuestra ventana
-pygame.display.set_caption("Pygame Pills: Mi Primera Ventana")
+display.set_caption("Pygame Pills: Mi Primera Ventana")
 
 # Esta variable controla si el bucle sigue corriendo
 ejecutando = True
@@ -75,9 +72,9 @@ while ejecutando:
   
     # --- GESTIÓN DE EVENTOS (ENTRADAS) ---
     # Revisamos la lista de cosas que han pasado
-    for evento in pygame.event.get():
+    for evento in event.get():
         # Si el evento detectado es que el usuario pulsó la [X] de cerrar
-        if evento.type == pygame.QUIT:
+        if evento.type == QUIT:
             ejecutando = False
 
     # --- DIBUJO (RENDERIZADO) ---
@@ -86,11 +83,11 @@ while ejecutando:
     ventana.fill("darkslategray")
 
     # Paso 2: Mostrar lo que hemos dibujado en el monitor
-    pygame.display.update()
+    display.update()
 
 # 3. FINALIZACIÓN
 # Cerramos Pygame y liberamos los recursos del sistema
-pygame.quit()
+quit()
 ```
 
 ---
