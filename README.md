@@ -4,14 +4,14 @@ Repositorio de referencia técnica para mis estudiantes. Aquí encontrarás un r
 
 ---
 
-## 📁 Contenido del Repositorio                          
+## 📁 Contenido del Repositorio
 
 Explora los módulos especializados del repositorio:
 
-| Carpeta de referencia | Tema | Descripción | Enlace |
-| --- | --- | --- | --- |
+| Carpeta de referencia | Tema           | Descripción                                                   | Enlace                            |
+| --------------------- | -------------- | -------------------------------------------------------------- | --------------------------------- |
 | `01-tipos_de_datos` | Tipos de Datos | Introducción a los tipos de datos en Python y su mutabilidad. | [Ver](./01-tipos_de_datos/README.md) |
-| `20-pygame/` | Pygame | Módulo de videojuegos 2D: ventana, eventos, sprites y más. | [Ver](./20-pygame/README.md) |
+| `20-pygame/`        | Pygame         | Módulo de videojuegos 2D: ventana, eventos, sprites y más.   | [Ver](./20-pygame/README.md)         |
 
 ---
 
@@ -231,6 +231,7 @@ python --version
 
 1. [Documentación oficial de Python](https://docs.python.org/3/)
 2. [W3 School](https://www.w3schools.com/python/default.asp)
+3. [Python Playground](https://python-playground.com/)
 
 ---
 
