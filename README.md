@@ -11,6 +11,7 @@ Explora los módulos especializados del repositorio:
 | Carpeta de referencia | Tema           | Descripción                                                   | Enlace                            |
 | --------------------- | -------------- | -------------------------------------------------------------- | --------------------------------- |
 | `01-tipos_de_datos` | Tipos de Datos | Introducción a los tipos de datos en Python y su mutabilidad. | [Ver](./01-tipos_de_datos/README.md) |
+| `02-funciones_nativas/`        | Herramientas esenciales (print, input), conversión de tipos, inspección (dir, help) y cálculo matemático.        | Funciones integradas (print, input), concatenación y manejo de entrada de datos.   | [Ver](./02-funciones_nativas/README.md)         |
 | `20-pygame/`        | Pygame         | Módulo de videojuegos 2D: ventana, eventos, sprites y más.   | [Ver](./20-pygame/README.md)         |
 
 ---

@@ -1,0 +1,1 @@
+print("2 elevado a la 3 es:", pow(2, 3))
