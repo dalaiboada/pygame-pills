@@ -59,6 +59,8 @@ A diferencia de las funciones nativas (como `len()`), los métodos se llaman con
 | `.replace(a, b)`          | Sustituye el texto `a` por `b`   | `"gato".replace("g", "p")` → `"pato"`    |
 | `.split(sep)`             | Crea una lista separando por `sep` | `"a-b-c".split("-")` → `['a', 'b', 'c']` |
 | `.find(x)`                | Índice de la primera ocurrencia     | `"hola".find("o")` → `3`                 |
+| `.startswith(x)`          | ¿Empieza con `x`?                 | `"hola".startswith("h")` → True           |
+| `.endswith(x)`            | ¿Termina con `x`?                 | `"archivo.py".endswith(".py")` → True     |
 
 ---
 
