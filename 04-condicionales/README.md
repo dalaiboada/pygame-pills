@@ -25,7 +25,38 @@ else:
 
 ---
 
-### 💻 Ejemplo Práctico
+### Ejemplo de uso
+
+```python
+# Ejemplo: Clasificación por edad
+edad = 18
+
+if edad < 13:
+    print("Es un niño")
+elif edad < 18:
+    print("Es un adolescente")
+else:
+    print("Es un adulto")
+
+```
+
+---
+
+### 🧱 Estructura Anidada (**if** dentro de otro **if**)
+La anidación ocurre cuando colocamos **una estructura condicional dentro de otra**. Esto nos permite evaluar una segunda condición únicamente si la primera ya se cumplió.
+
+```python
+if edad >= 18:
+    if tiene_membresia:
+        print("Acceso VIP concedido.")
+    else:
+        print("Acceso estándar concedido.")
+else:
+    print("Acceso denegado: debes ser mayor de edad.")
+```
+---
+
+### 💻 Ejemplos Prácticos
 
 Puedes ejecutar este ejemplo para ver cómo el programa decide qué mensaje mostrar según el valor de la variable:
 
@@ -44,20 +75,6 @@ Puedes ejecutar este ejemplo para ver cómo el programa decide qué mensaje most
 3. **Condición:** Debe ser siempre una expresión que resulte en `True` o `False`.
 
 
-### Archivo de ejemplo: `04-condicionales/ejemplos/condicional_edad.py`
-
-```python
-# Ejemplo: Clasificación por edad
-edad = 18
-
-if edad < 13:
-    print("Es un niño")
-elif edad < 18:
-    print("Es un adolescente")
-else:
-    print("Es un adulto")
-
-```
 
 ---
 
