@@ -52,16 +52,15 @@ A diferencia de los métodos, estas funciones son globales y reciben la cadena c
 
 A diferencia de las funciones nativas (como `len()`), los métodos se llaman con un punto: `variable.metodo()`.
 
-| Método                     | Qué hace                            | Ejemplo                                       |
-| --------------------------- | ------------------------------------ | --------------------------------------------- |
-| `.upper()` / `.lower()` | Mayúsculas / Minúsculas            | `"abc".upper()` → `"ABC"`                |
-| `.strip()`                | Quita espacios en extremos           | `" hola ".strip()` → `"hola"`            |
-| `.replace(a, b)`          | Sustituye el texto `a` por `b`   | `"gato".replace("g", "p")` → `"pato"`    |
-| `.split(sep)`             | Crea una lista separando por `sep` | `"a-b-c".split("-")` → `['a', 'b', 'c']` |
-| `.find(x)`                | Índice de la primera ocurrencia     | `"hola".find("o")` → `3`                 |
-| `.startswith(x)`          | ¿Empieza con `x`?                 | `"hola".startswith("h")` → True           |
-| `.endswith(x)`            | ¿Termina con `x`?                 | `"archivo.py".endswith(".py")` → True     |
-
+| Método                     | Qué hacer                            | Ejemplo                                       | Salida                                          |
+| --------------------------- | ------------------------------------ | --------------------------------------------- | ------------------------------------------------ |
+| `.upper()` / `.lower()` | Mayúsculas / Minúsculas            | `"abc".upper()`                | `"ABC"`                                         |
+| `.strip()`                | Quita espacios en extremos           | `" hola ".strip()`             | `"hola"`                                        |
+| `.replace(a, b)`          | Sustituye el texto `a` por `b`   | `"gato".replace("g", "p")`    | `"pato"`                                        |
+| `.find(x)`                | Índice de la primera ocurrencia     | `"hola".find("o")`                 | `3`                                             |
+| `.startswith(x)`          | ¿Empieza con `x`?                 | `"hola".startswith("h")`        | `True`                                          |
+| `.endswith(x)`            | ¿Termina con `x`?                 | `"archivo.py".endswith(".py")` | `True`                                          |
+| `.join(lista)`            | Une elementos de una lista usando la cadena como separador. | `"-".join(['a', 'b', 'c'])`| `'a-b-c'`                                       |
 ---
 
 ### 💻 Ejemplos de uso
@@ -70,6 +69,7 @@ A diferencia de las funciones nativas (como `len()`), los métodos se llaman con
 * [🐍 Funciones nativas](./ejemplos/funciones_nativas.py)
 * [🐍 Operaciones y Slicing](./ejemplos/basico_slicing.py)
 * [🐍 Uso de Métodos](./ejemplos/metodos.py)
+* [🐍 Metodo `.join()`](./ejemplos/metodo_join.py)
 
 ---
 
