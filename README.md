@@ -16,8 +16,9 @@ Explora los módulos especializados del repositorio:
 | `04-condicionales`     | Condicionales                                                                                                 | Toma de decisiones usando `if`, `elif` y `else`.                               | [Ver](./04-condicionales/README.md)     |
 | `05-ciclos`            | Ciclos                                                                                                        | Repetición de código con `while` y `for`, uso de `range` y control de flujo. | [Ver](./05-ciclos/README.md)            |
 | `06-cadenas`           | Cadenas                                                                                                       | Manipulación de strings, slicing, métodos de objeto y operaciones de secuencia.    | [Ver](./06-cadenas/README.md)           |
-| `07-listas/` | Listas | Gestión de colecciones ordenadas: creación, acceso, métodos y funciones nativas. | [Ver](https://www.google.com/search?q=./07-listas/README.md) |
-| `20-pygame`            | Pygame                                                                                                        | Módulo de videojuegos 2D: ventana, eventos, sprites y más.                         | [Ver](./20-pygame/README.md)            |
+| `07-listas/` | Listas | Gestión de colecciones ordenadas: creación, acceso, métodos y funciones nativas. | [Ver](./07-listas/README.md) |
+| `08-diccionarios/` | Diccionarios | Estructuras clave-valor para búsquedas rápidas y gestión de datos complejos. | [Ver](./08-diccionarios/README.md) |
+| `11-pygame`            | Pygame                                                                                                        | Módulo de videojuegos 2D: ventana, eventos, sprites y más.                         | [Ver](./11-pygame/README.md)            |
 
 ---
 
