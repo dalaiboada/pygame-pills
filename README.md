@@ -2,6 +2,8 @@
 
 Repositorio de referencia técnica para mis estudiantes. Aquí encontrarás un resumen conciso de los conceptos fundamentales de Python, organizados como "píldoras" de rápido acceso.
 
+Incluyen tabla comparativas, definiciones y ejemplos prácticos de sintaxis.
+
 ---
 
 ## 📁 Contenido del Repositorio
