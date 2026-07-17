@@ -16,8 +16,9 @@ Explora los módulos especializados del repositorio:
 | `04-condicionales`     | Condicionales                                                                                                 | Toma de decisiones usando `if`, `elif` y `else`.                               | [Ver](./04-condicionales/README.md)     |
 | `05-ciclos`            | Ciclos                                                                                                        | Repetición de código con `while` y `for`, uso de `range` y control de flujo. | [Ver](./05-ciclos/README.md)            |
 | `06-cadenas`           | Cadenas                                                                                                       | Manipulación de strings, slicing, métodos de objeto y operaciones de secuencia.    | [Ver](./06-cadenas/README.md)           |
-| `07-listas/` | Listas | Gestión de colecciones ordenadas: creación, acceso, métodos y funciones nativas. | [Ver](./07-listas/README.md) |
-| `08-diccionarios/` | Diccionarios | Estructuras clave-valor para búsquedas rápidas y gestión de datos complejos. | [Ver](./08-diccionarios/README.md) |
+| `07-listas`            | Listas                                                                                                        | Gestión de colecciones ordenadas: creación, acceso, métodos y funciones nativas.  | [Ver](./07-listas/README.md)            |
+| `08-diccionarios`      | Diccionarios                                                                                                  | Estructuras clave-valor para búsquedas rápidas y gestión de datos complejos.      | [Ver](./08-diccionarios/README.md)      |
+| `09-tuplas`            | Tuplas                                                                                                        | Colecciones inmutables, optimización de memoria y uso de desempaquetado.            | [Ver](./09-tuplas/README.md)            |
 | `11-pygame`            | Pygame                                                                                                        | Módulo de videojuegos 2D: ventana, eventos, sprites y más.                         | [Ver](./11-pygame/README.md)            |
 
 ---
@@ -153,6 +154,17 @@ while contador < 5:
 
 ---
 
+### Resumen de Estructuras de Datos
+
+| Estructura          | Mutable | Ordenada | Duplicados | Ejemplo              | Acceso               |
+| :------------------ | :------ | :------- | :--------- | :------------------- | :------------------- |
+| **`list`**  | Sí     | Sí      | Sí        | `[1, 2, 3]`        | lista[0] = 1         |
+| **`tuple`** | No      | Sí      | Sí        | `(1, 2, 3)`        | tupla[0]             |
+| `dict`            | Sí     | No       | No         | `{"a": 1, "b": 2}` | diccionario["a"] = 1 |
+| **`set`**   | Sí     | No       | No         | `{1, 2, 3}`        | conjunto.add(4)      |
+
+---
+
 ## Funciones
 
 ```python
@@ -234,11 +246,17 @@ python --version
 
 ---
 
+## 🆘 Cómo obtener ayuda
+
+- **`help(objeto)`**: Escríbelo en la consola (ej. `help(list)`) y Python te mostrará la documentación oficial de lo que necesites.
+- **`dir(objeto)`**: Te lista todos los métodos disponibles para ese objeto.
+
 ## 📌 Recursos Adicionales
 
 1. [Documentación oficial de Python](https://docs.python.org/3/)
-2. [W3 School](https://www.w3schools.com/python/default.asp)
-3. [Python Playground](https://python-playground.com/)
+2. [LabEx - Python CheatSheet](https://labex.io/pythoncheatsheet/cheatsheet/basics)
+3. [W3 School](https://www.w3schools.com/python/default.asp)
+4. [Python Playground](https://python-playground.com/)
 
 ---
 
