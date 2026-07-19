@@ -22,7 +22,8 @@ Explora los módulos especializados del repositorio:
 | `08-diccionarios`      | Diccionarios                                                                                                  | Estructuras clave-valor para búsquedas rápidas y gestión de datos complejos.                     | [Ver](./08-diccionarios/README.md)      |
 | `09-tuplas`            | Tuplas                                                                                                        | Colecciones inmutables, optimización de memoria y uso de desempaquetado.                           | [Ver](./09-tuplas/README.md)            |
 | `10-conjuntos`         | Conjuntos                                                                                                     | Colecciones únicas, eliminación de duplicados y operaciones matemáticas (unión, intersección). | [Ver](./10-conjuntos/README.md)         |
-| `pygame`            | Pygame                                                                                                        | Módulo de videojuegos 2D: ventana, eventos, sprites y más.                                        | [Ver](./pygame/README.md)            |
+| `11-funciones`         | Funciones                                                                                                     | Modularización del código, parámetros, retorno y reutilización.                                 | [Ver](./11-funciones/README.md)         |
+| `pygame`               | Pygame                                                                                                        | Módulo de videojuegos 2D: ventana, eventos, sprites y más.                                        | [Ver](./pygame/README.md)               |
 
 ---
 
